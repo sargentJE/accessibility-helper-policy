@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Privacy Policy – Accessibility Helper Chrome Extension</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Inline version of the core style-tokens in css/base.css  -->
+  <style>
+    /* -----------------------------------------------------------
+       MyVision design tokens (extracted from css/base.css)
+    ----------------------------------------------------------- */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    :root{
+      /* Palette */
+      --color-primary:#2e4e9d;
+      --color-primary-dark:#1c51d9;
+      --color-primary-light:#e7ecff;
+      --color-secondary:#4b4b4b;
+      --color-surface:#f7f7f7;
+      --color-border:#dddddd;
+      --color-success:#28a745;
+
+      /* Typography */
+      --font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+      --font-size-xs:.75rem;
+      --font-size-sm:.875rem;
+      --font-size-base:1rem;
+      --font-size-lg:1.125rem;
+      --font-size-xl:1.25rem;
+
+      /* Spacing */
+      --spacing-xs:.25rem;
+      --spacing-sm:.5rem;
+      --spacing-md:1rem;
+      --spacing-lg:1.5rem;
+      --spacing-xl:2rem;
+
+      /* Other */
+      --border-radius-md:8px;
+      --shadow-sm:0 2px 4px rgba(0,0,0,.05);
+      --shadow-md:0 4px 8px rgba(0,0,0,.10);
+      --transition:.2s;
+    }
+
+    /* -----------------------------------------------------------
+       Global reset / base (trimmed)
+    ----------------------------------------------------------- */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{
+      font-family:var(--font-family);
+      font-size:var(--font-size-base);
+      line-height:1.6;
+      color:var(--color-secondary);
+      background:#ffffff;
+      -webkit-font-smoothing:antialiased;
+    }
+    h1,h2,h3{color:var(--color-primary);line-height:1.3;margin-bottom:var(--spacing-md);}
+    h1{font-size:var(--font-size-xl);}
+    h2{font-size:var(--font-size-lg);}
+    p,li{font-size:var(--font-size-sm);margin-bottom:var(--spacing-md);}
+    a{color:var(--color-primary);text-decoration:none;transition:color var(--transition);}
+    a:hover{text-decoration:underline;color:var(--color-primary-dark);}
+    ul{padding-left:var(--spacing-lg);}
+    li{margin-bottom:var(--spacing-xs);}
+
+    /* -----------------------------------------------------------
+       Layout & card borrowed from css/components.css
+    ----------------------------------------------------------- */
+    header{
+      background:linear-gradient(90deg,var(--color-primary) 0%,var(--color-primary-dark) 100%);
+      color:#fff;
+      text-align:center;
+      padding:var(--spacing-lg) var(--spacing-sm) var(--spacing-md);
+      box-shadow:var(--shadow-sm);
+    }
+    header h1{margin-bottom:var(--spacing-sm); color: #fff;} /* Added color: #fff */
+    header p{font-size:var(--font-size-xs);opacity:.9;}
+
+    main{
+      max-width:900px;
+      margin:calc(var(--spacing-lg)*2) auto var(--spacing-xl);
+      background:#fff;
+      border:1px solid var(--color-border);
+      border-radius:var(--border-radius-md);
+      padding:var(--spacing-xl) var(--spacing-lg);
+      box-shadow:var(--shadow-md);
+    }
+
+    footer{
+      text-align:center;
+      font-size:var(--font-size-xs);
+      color:#6c757d;
+      margin-bottom:var(--spacing-lg);
+    }
+
+    /* -----------------------------------------------------------
+       Responsive tweaks (phone / wide desktop)
+    ----------------------------------------------------------- */
+    @media(max-width:575.98px){ /* phones */
+      main{margin:var(--spacing-lg) var(--spacing-sm);padding:var(--spacing-lg);}
+      header{padding:var(--spacing-lg) var(--spacing-sm);}
+      h1{font-size:1.25rem;}
+      h2{font-size:1.1rem;}
+    }
+    @media(min-width:992px){ /* large desktop */
+      main{padding:var(--spacing-xl) var(--spacing-xl);}
+    }
+
+    /* Reduced-motion accessibility */
+    @media(prefers-reduced-motion:reduce){
+      *{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Privacy Policy for MyVision Accessibility Helper </h1>
+  <p>Last updated: 2&nbsp;May&nbsp;2025</p>
+</header>
+
+<main>
+  <h2>Introduction</h2>
+  <p>
+    This Privacy Policy explains how the Accessibility Helper Chrome Extension
+    (“Extension”), developed by <strong>MyVision&nbsp;Oxfordshire</strong>, collects, uses,
+    and safeguards your data. The Extension exists to gather accessibility
+    feedback and foster digital inclusion.
+  </p>
+
+  <h2>What Information We Collect</h2>
+  <ul>
+    <li><strong>Website URLs:</strong> Pages you review.</li>
+    <li><strong>Form Responses:</strong> Your answers to accessibility questions.</li>
+    <li><strong>Browser Info:</strong> Basic environment details (e.g. browser version).</li>
+    <li><strong>Settings Preferences:</strong> Theme, font-size, contrast toggles.</li>
+    <li><strong>Email &amp; Auth Token:</strong> Used solely for sign-in to MyVision’s backend.</li>
+  </ul>
+
+  <h2>How We Use Your Information</h2>
+  <ul>
+    <li>Aggregate feedback to identify common accessibility issues.</li>
+    <li>Improve the Extension’s functionality and user experience.</li>
+    <li>Conduct research on accessibility barriers.</li>
+  </ul>
+
+  <h2>Data Storage &amp; Security</h2>
+  <ul>
+    <li>All communication takes place over secure HTTPS.</li>
+    <li>Form data is encrypted during transit.</li>
+    <li>Data is stored on secure servers with strict access controls.</li>
+    <li>We retain data only as long as necessary for the purposes above.</li>
+  </ul>
+
+  <h2>Third-Party Sharing</h2>
+  <p>We <strong>do not</strong> share personal data except:</p>
+  <ul>
+    <li>When required by law.</li>
+    <li>With your explicit consent.</li>
+    <li>In anonymised, aggregated form.</li>
+  </ul>
+
+  <h2>Your Rights</h2>
+  <p>You may:</p>
+  <ul>
+    <li>Access or export your data.</li>
+    <li>Request deletion of your data.</li>
+    <li>Opt out of future data collection.</li>
+  </ul>
+  <p>Email us at <a href="mailto:accessibility@myvision.org.uk">accessibility@myvision.org.uk</a> to exercise these rights.</p>
+
+  <h2>Data Minimisation Commitment</h2>
+  <p>We collect only data strictly necessary for the Extension’s purpose.</p>
+
+  <h2>Limited Use Statement</h2>
+  <p>
+    Use of information obtained from Google APIs complies with the Chrome Web
+    Store User Data Policy, including the Limited Use requirements.
+  </p>
+
+  <h2>Changes to This Policy</h2>
+  <p>Updates will be posted on this page with a revised “Last updated” date.</p>
+
+  <h2>Contact Us</h2>
+  <p>
+    <strong>Email:</strong> <a href="mailto:accessibility@myvision.org.uk">accessibility@myvision.org.uk</a><br>
+    <strong>Website:</strong> <a href="https://www.myvision.org.uk">www.myvision.org.uk</a><br>
+    <strong>Address:</strong> MyVision&nbsp;Oxfordshire, Bradbury&nbsp;Lodge,<br>
+    Gordon&nbsp;Woodward&nbsp;Way, Oxford, OX1&nbsp;4XL, United&nbsp;Kingdom
+  </p>
+</main>
+
+<footer>&copy; 2025 MyVision Oxfordshire. All rights reserved.</footer>
+
+</body>
+</html>
