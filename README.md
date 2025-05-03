@@ -55,8 +55,8 @@ The `index.html` file is a single-page document with the following key component
 
 For any questions regarding this privacy policy or the extension's data practices, please contact:
 
-*   **Email:** `accessibility@myvision.org.uk`
-*   **Website:** `https://www.myvision.org.uk`
+*   **Email:** `Info@MyVision.org.uk`
+*   **Website:** `www.MyVision.org.uk`
 *   **Address:** MyVision Oxfordshire, Bradbury Lodge, Gordon Woodward Way, Oxford, OX1 4XL, United Kingdom
 
 ---
