@@ -5,15 +5,18 @@
   <title>Privacy Policy – Accessibility Helper Chrome Extension</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Inline version of the core style-tokens in css/base.css  -->
+  <!-- * Inline version of the core style-tokens in css/base.css -->
+  <!-- ANCHOR - Styles -->
   <style>
     /* -----------------------------------------------------------
-       MyVision design tokens (extracted from css/base.css)
+       * MyVision design tokens (extracted from css/base.css)
     ----------------------------------------------------------- */
+    /* ? Should we link to an external font stylesheet instead of importing? */
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
     :root{
       /* Palette */
+      /* ! Ensure these colors meet WCAG AA contrast ratios */
       --color-primary:#2e4e9d;
       --color-primary-dark:#1c51d9;
       --color-primary-light:#e7ecff;
@@ -45,7 +48,7 @@
     }
 
     /* -----------------------------------------------------------
-       Global reset / base (trimmed)
+       * Global reset / base (trimmed)
     ----------------------------------------------------------- */
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
     body{
@@ -54,7 +57,7 @@
       line-height:1.6;
       color:var(--color-secondary);
       background:#ffffff;
-      -webkit-font-smoothing:antialiased;
+      -webkit-font-smoothing:antialiased; /* * Improves font rendering on some displays */
     }
     h1,h2,h3{color:var(--color-primary);line-height:1.3;margin-bottom:var(--spacing-md);}
     h1{font-size:var(--font-size-xl);}
@@ -66,8 +69,9 @@
     li{margin-bottom:var(--spacing-xs);}
 
     /* -----------------------------------------------------------
-       Layout & card borrowed from css/components.css
+       * Layout & card borrowed from css/components.css
     ----------------------------------------------------------- */
+    /* ANCHOR - Header Styles */
     header{
       background:linear-gradient(90deg,var(--color-primary) 0%,var(--color-primary-dark) 100%);
       color:#fff;
@@ -75,9 +79,10 @@
       padding:var(--spacing-lg) var(--spacing-sm) var(--spacing-md);
       box-shadow:var(--shadow-sm);
     }
-    header h1{margin-bottom:var(--spacing-sm); color: #fff;} /* Added color: #fff */
+    header h1{margin-bottom:var(--spacing-sm); color: #fff;} /* * Explicitly set header h1 color to white */
     header p{font-size:var(--font-size-xs);opacity:.9;}
 
+    /* ANCHOR - Main Content Styles */
     main{
       max-width:900px;
       margin:calc(var(--spacing-lg)*2) auto var(--spacing-xl);
@@ -88,6 +93,7 @@
       box-shadow:var(--shadow-md);
     }
 
+    /* ANCHOR - Footer Styles */
     footer{
       text-align:center;
       font-size:var(--font-size-xs);
@@ -96,19 +102,20 @@
     }
 
     /* -----------------------------------------------------------
-       Responsive tweaks (phone / wide desktop)
+       * Responsive tweaks (phone / wide desktop)
     ----------------------------------------------------------- */
-    @media(max-width:575.98px){ /* phones */
+    /* ANCHOR - Responsive Styles */
+    @media(max-width:575.98px){ /* * Styles for phones */
       main{margin:var(--spacing-lg) var(--spacing-sm);padding:var(--spacing-lg);}
       header{padding:var(--spacing-lg) var(--spacing-sm);}
       h1{font-size:1.25rem;}
       h2{font-size:1.1rem;}
     }
-    @media(min-width:992px){ /* large desktop */
+    @media(min-width:992px){ /* * Styles for large desktops */
       main{padding:var(--spacing-xl) var(--spacing-xl);}
     }
 
-    /* Reduced-motion accessibility */
+    /* * Reduced-motion accessibility feature */
     @media(prefers-reduced-motion:reduce){
       *{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
     }
@@ -116,12 +123,16 @@
 </head>
 <body>
 
+<!-- ANCHOR - Header Section -->
 <header>
   <h1>Privacy Policy for MyVision Accessibility Helper </h1>
+  <!-- ! Keep this date updated whenever the policy changes -->
   <p>Last updated: 2&nbsp;May&nbsp;2025</p>
 </header>
 
+<!-- ANCHOR - Main Content Section -->
 <main>
+  <!-- ANCHOR - Introduction -->
   <h2>Introduction</h2>
   <p>
     This Privacy Policy explains how the Accessibility Helper Chrome Extension
@@ -130,6 +141,7 @@
     feedback and foster digital inclusion.
   </p>
 
+  <!-- ANCHOR - Information Collected -->
   <h2>What Information We Collect</h2>
   <ul>
     <li><strong>Website URLs:</strong> Pages you review.</li>
@@ -138,14 +150,18 @@
     <li><strong>Settings Preferences:</strong> Theme, font-size, contrast toggles.</li>
     <li><strong>Email &amp; Auth Token:</strong> Used solely for sign-in to MyVision’s backend.</li>
   </ul>
+  <!-- ? Is the list exhaustive? Double-check if any other implicit data is collected. -->
 
+  <!-- ANCHOR - Information Usage -->
   <h2>How We Use Your Information</h2>
   <ul>
     <li>Aggregate feedback to identify common accessibility issues.</li>
     <li>Improve the Extension’s functionality and user experience.</li>
     <li>Conduct research on accessibility barriers.</li>
   </ul>
+  <!-- * Note: Emphasis on aggregation and improvement. -->
 
+  <!-- ANCHOR - Data Storage and Security -->
   <h2>Data Storage &amp; Security</h2>
   <ul>
     <li>All communication takes place over secure HTTPS.</li>
@@ -153,7 +169,9 @@
     <li>Data is stored on secure servers with strict access controls.</li>
     <li>We retain data only as long as necessary for the purposes above.</li>
   </ul>
+  <!-- TODO: Specify data retention period more concretely if possible. -->
 
+  <!-- ANCHOR - Third-Party Sharing -->
   <h2>Third-Party Sharing</h2>
   <p>We <strong>do not</strong> share personal data except:</p>
   <ul>
@@ -161,7 +179,9 @@
     <li>With your explicit consent.</li>
     <li>In anonymised, aggregated form.</li>
   </ul>
+  <!-- ! Very important section regarding user privacy. -->
 
+  <!-- ANCHOR - User Rights -->
   <h2>Your Rights</h2>
   <p>You may:</p>
   <ul>
@@ -170,29 +190,41 @@
     <li>Opt out of future data collection.</li>
   </ul>
   <p>Email us at <a href="mailto:accessibility@myvision.org.uk">accessibility@myvision.org.uk</a> to exercise these rights.</p>
+  <!-- * Clear contact point for exercising rights. -->
 
+  <!-- ANCHOR - Data Minimisation -->
   <h2>Data Minimisation Commitment</h2>
   <p>We collect only data strictly necessary for the Extension’s purpose.</p>
 
+  <!-- ANCHOR - Limited Use Statement -->
   <h2>Limited Use Statement</h2>
   <p>
     Use of information obtained from Google APIs complies with the Chrome Web
     Store User Data Policy, including the Limited Use requirements.
   </p>
+  <!-- * Compliance statement required by Chrome Web Store. -->
+  <!-- LINK - Third-Party Sharing --> <!-- Relevant link back to sharing policy -->
 
+  <!-- ANCHOR - Policy Changes -->
   <h2>Changes to This Policy</h2>
   <p>Updates will be posted on this page with a revised “Last updated” date.</p>
+  <!-- LINK - Header Section --> <!-- Link back to where the date is displayed -->
 
+  <!-- ANCHOR - Contact Information -->
   <h2>Contact Us</h2>
   <p>
-    <strong>Email:</strong> <a href="mailto:accessibility@myvision.org.uk">accessibility@myvision.org.uk</a><br>
-    <strong>Website:</strong> <a href="https://www.myvision.org.uk">www.myvision.org.uk</a><br>
-    <strong>Address:</strong> MyVision&nbsp;Oxfordshire, Bradbury&nbsp;Lodge,<br>
-    Gordon&nbsp;Woodward&nbsp;Way, Oxford, OX1&nbsp;4XL, United&nbsp;Kingdom
+    <strong>Email:</strong> <a href="mailto:Info@MyVision.org.uk">Info@MyVision.org.uk</a><br>
+    <strong>Website:</strong> <a href="https://www.MyVision.org.uk">www.MyVision.org.uk</a><br>
+    <strong>Address:</strong> MyVision&nbsp;Oxfordshire,<br> 
+    Bradbury&nbsp;Lodge, Gordon&nbsp;Woodward&nbsp;Way,<br> 
+    Oxford, OX1&nbsp;4XL, United&nbsp;Kingdom
   </p>
+  <!-- LINK - User Rights --> <!-- Link back to rights section where email is mentioned -->
 </main>
 
+<!-- ANCHOR - Footer Section -->
 <footer>&copy; 2025 MyVision Oxfordshire. All rights reserved.</footer>
+<!-- TODO: Consider adding a link back to the main MyVision website in the footer. -->
 
 </body>
 </html>
